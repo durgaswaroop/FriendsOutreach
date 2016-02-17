@@ -14,6 +14,7 @@ public class ArrayKeeper{
     int currentFriendLine=3;
     int numLines=0;
     int numOfFriendsContactedThisMonth=0;
+    int MONTHLYLIMIT = 10; // Configurable. Change it as per your needs. 10 calls per month
     ArrayList <String> allFriends = new ArrayList<>();
     HashMap<LocalDate, ArrayList<String>> friendsContacted = new HashMap <LocalDate, ArrayList<String>>();
     
@@ -75,7 +76,7 @@ public class ArrayKeeper{
         return friendsContacted;        
     }
     public boolean areWeGoodForThisMonth(){
-        if(numOfFriendsContactedThisMonth >= 10)
+        if(numOfFriendsContactedThisMonth >= MONTHLYLIMIT)
                 return true;
         
         return false;

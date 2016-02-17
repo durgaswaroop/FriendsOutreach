@@ -11,7 +11,7 @@ public class RandomFriendGenerator {
 		DaysDifferenceCalc ddc = new DaysDifferenceCalc();
 		Random rnd = new Random();
 		long daysTillLastContacted = -100;
-
+		long recallGap = 100 ; //100 days. So, if you don't call some body for 100 days their name will be picked up automcatically
 		public String friendGenerator(int numFriends,ArrayList<String> friends, 
 						HashMap <LocalDate,ArrayList<String>> contactedFriends){
 

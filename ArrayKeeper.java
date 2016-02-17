@@ -53,8 +53,6 @@ public class ArrayKeeper{
         System.out.println("Contacted List Start Line number : " + contactedListStartLineNumber);
         System.out.println("Other Info Start Line number:" + otherInfoStartLineNumber);
         //System.out.println("Something after this");
-        //System.out.println(Files.readAllLines(Paths.get(listFile)).get(contactedListStartLineNumber));//basically prints the line after heading. The =====
-        //System.out.println("Something before this");
         for(int i = contactedListStartLineNumber+2 ; i<otherInfoStartLineNumber-1; i++){
             //System.out.println("I  m herer");
             date = dateFormatter(lop.lineSplitterForTheFriends(listFile, i-1)[0]); //i-1 because it prints Line 54 is we ask for line 53

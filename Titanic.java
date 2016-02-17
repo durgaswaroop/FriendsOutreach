@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
+
 public class Titanic {
 
 	public static void main(String[] args) throws IOException {
@@ -23,17 +24,6 @@ public class Titanic {
 		}
 
 		String friendPicked = rfg.friendGenerator(friends.size(), friends, contactedFriends);
-		//Calendar cal =Calendar.getInstance();
-		
-		/*LocalDate ld = LocalDate.parse("2016-02-10");
-		TemporalField fieldIn = WeekFields.of(Locale.ENGLISH).dayOfWeek();
-		System.out.println(ld.with(fieldIn,1));
-		
-		//cal.set(ld.getYear(), ld.getMonthValue(), ld.getDayOfMonth(), 0, 0, 0);
-		//System.out.println(ld.with(DayOfWeek.MONDAY));
-		//System.out.println(ld.with(DayOfWeek.));
-		System.out.println("First week" + cal.getFirstDayOfWeek());
-		System.out.println("****************");*/
 		System.out.println(friends.size());
 		//System.out.println("Friends All" + friends);
 		System.out.println("Friends contacted till now:" + contactedFriends);

@@ -12,7 +12,7 @@ What does this program do?
 
 Stuff You need to have before you can run this program
 ------------------------------------------------------
-* Java installed
+* Java 8 + installed (Lambdas support required)
 * A markdown file with the names of your friends and dates when you last contacted them
 * The markdown file should look like the `Demo.markdown` available in the repo
 

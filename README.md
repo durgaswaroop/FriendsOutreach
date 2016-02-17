@@ -1,8 +1,8 @@
 FriendsOutreach
 ===============
-To keep in touch 
-Still Work in Progress. 
-Its working now. So, feel free to use it.
+Helps you to keep in touch with all your friends effectively.
+Its all working fine now. So, feel free to use it. 
+And, you can suggest feature requests too if you like to see some more functionality in this
 
 What does this program do?
 --------------------------
@@ -20,10 +20,10 @@ How to run this project
 -----------------------
 * You can run this like any other Java program that you might have used
 * Titanic.java is the main class file
-* So, to run this, just compile and execute Titanic.java and it would generate a friend for you to contact.
+* So, to run this, just compile and execute `Titanic.java` and it would generate a friend for you to contact.
 
 Things you might want to configure
 ----------------------------------
-* Change the **listFile** variable in Titanic.java to point to your markdown file location
-* How many calls per month should be the limit? Configurable in Arraykeeper.java in the variable *MONTHLYLIMIT* (Default is 10 calls per month)
-* What should be the maximum time after which you would want to call a person again? Configurable via the variable *recallGap* in RandomFriendGenerator.java. (Default is 100 days)
+* Change the **listFile** variable in `Titanic.java` to point to your markdown file location
+* How many calls per month should be the limit? Configurable in `Arraykeeper.java` in the variable *MONTHLYLIMIT* (Default is 10 calls per month)
+* What should be the maximum time after which you would want to call a person again? Configurable via the variable *recallGap* in `RandomFriendGenerator.java`. (Default is 100 days)

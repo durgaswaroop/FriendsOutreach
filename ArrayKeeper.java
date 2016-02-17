@@ -40,6 +40,7 @@ public class ArrayKeeper{
                 allFriends.add(currentLine);
             }
             currentFriendLine++;
+            //System.out.println("Line number here is :" + i);
         }
         return allFriends;
     }
@@ -50,13 +51,16 @@ public class ArrayKeeper{
         String friendName=null;
         ArrayList <String> friendsContactedInOneDay = new ArrayList<String>();
         System.out.println("Contacted List Start Line number : " + contactedListStartLineNumber);
-        System.out.println(Files.readAllLines(Paths.get(listFile)).get(contactedListStartLineNumber));
-        for(int i = contactedListStartLineNumber+2 ; i<otherInfoStartLineNumber; i++){
-            //System.out.println("I  herer");
-            date = dateFormatter(lop.lineSplitterForTheFriends(listFile, i-1)[0]);
+        System.out.println("Other Info Start Line number:" + otherInfoStartLineNumber);
+        //System.out.println("Something after this");
+        //System.out.println(Files.readAllLines(Paths.get(listFile)).get(contactedListStartLineNumber));//basically prints the line after heading. The =====
+        //System.out.println("Something before this");
+        for(int i = contactedListStartLineNumber+2 ; i<otherInfoStartLineNumber-1; i++){
+            //System.out.println("I  m herer");
+            date = dateFormatter(lop.lineSplitterForTheFriends(listFile, i-1)[0]); //i-1 because it prints Line 54 is we ask for line 53
             friendName = lop.lineSplitterForTheFriends(listFile, i-1)[1];
 
-            if(date.getMonthValue() == LocalDate.now().getMonthValue()){
+            if(date.getMonthValue() == LocalDate.now().getMonthValue()){ //keeps track of how many friends contacted this month
                     numOfFriendsContactedThisMonth++;
             }    
             if(friendsContacted.containsKey(date))

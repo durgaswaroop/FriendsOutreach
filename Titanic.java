@@ -14,10 +14,10 @@ public class Titanic {
 		System.out.println(friends);
 		HashMap<LocalDate, ArrayList<String>> contactedFriends = ark.arrayGenForContactedFriends(listFile);
 		//System.out.println(contactedFriends);
-	
+
 		if(ark.areWeGoodForThisMonth()){
 				System.out.println("heere:");
-			   	System.out.println("Looks like we are good for this month. Do you still want to continue? [Yes(y/Y) No(n/N)]");
+				System.out.println("Looks like we are good for this month. Do you still want to continue? [Yes(y/Y) No(n/N)]");
 				if(System.in.read()== 'n' || System.in.read()== 'N' )
 					System.exit(0);
 		}

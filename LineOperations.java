@@ -14,22 +14,27 @@ public class LineOperations {
 		String line;
 		try(BufferedReader br = new BufferedReader(new FileReader(listFile))){
 			while((line=br.readLine()) != null){
-				numOfLines++;				
+				numOfLines++;
 				if(line.equals("Till Now Contacted"))
 					contactedListStartLineNumber = numOfLines; //to adjust for the start with 1 
-				else if(line.equals("Birthdays and other Info"));
+				else if(line.equals("Birthdays and other Info"))
 					otherInfoStartLineNumber = numOfLines;
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		array[0] = numOfLines; // 1st value has num of lines
+		System.out.println("Printing From LineOperations");
+		System.out.println(array[0]);
 		array[1] = contactedListStartLineNumber; // 2nd value has the num of lines in the entire friends list
+		System.out.println(array[1]);
 		array[2] = otherInfoStartLineNumber;
+		System.out.println(array[2]);
 		//System.out.println("list start:"+array[1]);
+		System.out.println("Print End");
 		return array;
 	}
-	
+
 	public String[] lineSplitterForTheFriends(String listFile, int currentLineNumInContactedList){
 		String currentLine = null;
 		String [] tempArray = new String[2];
@@ -43,14 +48,14 @@ public class LineOperations {
 			//System.out.println("Printed from here")
 			e.printStackTrace();
 		}
-		System.out.println("Current line in the method:"+ currentLine);
+		//System.out.println("Current line in the method:"+ currentLine);
 		tempArray = currentLine.split("\\|");
 		tempArray[0]=tempArray[0].trim();
 		tempArray[1]=tempArray[1].trim();
 		//System.out.println("Size of the array here is:" + tempArray.length);
 		return tempArray;
 		
-	}
+
 	//public void lineSplitterForAllFriends(String listFile, int currentLineNumInAllFriendsList){
 			//String currentLine = null;
 			//String [] tempArray;
@@ -63,6 +68,6 @@ public class LineOperations {
 					//e.printStackTrace();
 			//}
 			//tempArray = currentLine.split("\\|");
-	//}
 
+	}
 }

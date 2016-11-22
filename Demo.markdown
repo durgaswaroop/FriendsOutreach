@@ -12,7 +12,7 @@ Josephine Hitchcock
 
 Till Now Contacted
 ==================
-// Here the date followed by the name. Format of the date and the seperator are important. 
+// Here the date followed by the name. Format of the date (dd-mm-yyyy) and the separator are important. 
 14-02-2016 | Cassie Blake
 14-02-2016 | Diana Meade
 14-02-2016 | Josephine Hitchcock
@@ -22,8 +22,8 @@ Till Now Contacted
 Birthdays and other Info
 ========================
 //This will be ignored by the program. This is just for your reference and you can add any info you want to help you the next time they call
-18-04-2016 | Cassie Blake
-02-01-2016 | Diana Meade
+28-03-2016 | Cassie Blake birthday
+18-04-2016 | Diana Meade birthday
 Mark Masterspy | Working on a op secret mission with John Bonds
 Sherlock Watson | The best of both worlds
 
